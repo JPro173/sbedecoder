@@ -106,7 +106,7 @@ class SBESchema(object):
         definition['fields'] = fields
         definition['groups'] = groups
 
-    def _build_message_field(self, message_type, field_definition, offset, endian='<', add_header_size=True):
+    def _build_message_field(self, message_type, field_definition, offset, endian='>', add_header_size=True):
         field_original_name = field_definition['name']
         field_name = convert_to_underscore(field_original_name)
         field_id = field_definition['id']
