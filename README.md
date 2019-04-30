@@ -1,12 +1,14 @@
 [![Build Status](https://travis-ci.org/tfgm/sbedecoder.svg?branch=master)](https://travis-ci.org/tfgm/sbedecoder)
 
-Python based Simple Binary Encoding (SBE) decoder
-=================================================
+Python based Simple Binary Encoding (SBE) decoder for TWIME, Moscow Exchange (MOEX)
+===================================================================================
 
 Overview
 --------
 
 sbedecoder is a simple python package for parsing SBE encoded data.  
+
+TWIME spec: http://ftp.moex.com/pub/TWIME/prod/doc/spectra_twime_en.pdf
 
 sbedecoder dynamically generates an SBE parser from an xml description of the format. This is accomplished by
 creating an instance of `SBESchema()` and calling it's `parse()` method with a file name:
